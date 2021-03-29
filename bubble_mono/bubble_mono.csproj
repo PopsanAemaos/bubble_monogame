@@ -64,6 +64,7 @@
     <None Remove="Content\obj\DesktopGL\Audios\Shooting.mgcontent" />
     <None Remove="Content\obj\DesktopGL\Audios\Thunder_Sound.mgcontent" />
     <None Remove="Content\bin\DesktopGL\Audios\Thunder_Sound.xnb" />
+    <None Remove="Content\bin\DesktopGL\Content\Audios\transition t07 two-step 007.xnb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />

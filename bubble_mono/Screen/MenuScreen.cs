@@ -40,7 +40,7 @@ namespace bubble_mono.Screen
         {
             BG_Sound = content.Load<Song>("Audios/BG_music");
             MediaPlayer.IsRepeating = true;
-            MediaPlayer.Volume = Singleton.Instance.BGM_MasterVolume/500f;
+            MediaPlayer.Volume = 0.56f;
             MediaPlayer.Play(BG_Sound);
             //BG_Sound.Volume = 0.1f;
             //BG_Sound.Play();
@@ -110,7 +110,7 @@ namespace bubble_mono.Screen
                     {
                         showStart = true;
                         mainScreen = false;
-                        SoundClickUI.Play();
+                        //SoundClickUI.Play();
                     }
                 }
                 else
@@ -203,7 +203,7 @@ namespace bubble_mono.Screen
                 if (showOption)
                 {
                     // Click change CheckBox FullScreen
-                    if ((Singleton.Instance.MouseCurrent.X > 800 && Singleton.Instance.MouseCurrent.Y > 425) && (Singleton.Instance.MouseCurrent.X < (800 + CheckBox.Width) && Singleton.Instance.MouseCurrent.Y < (425 + CheckBox.Height)))
+                    if ((Singleton.Instance.MouseCurrent.X > 800 && Singleton.Instance.MouseCurrent.Y > 250) && (Singleton.Instance.MouseCurrent.X < (800 + CheckBox.Width) && Singleton.Instance.MouseCurrent.Y < (250 + CheckBox.Height)))
                     {
                         if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
                         {
@@ -211,7 +211,7 @@ namespace bubble_mono.Screen
                         }
                     }
                     // Click change CheckBox ShowFPS
-                    if ((Singleton.Instance.MouseCurrent.X > 800 && Singleton.Instance.MouseCurrent.Y > 500) && (Singleton.Instance.MouseCurrent.X < (800 + CheckBox.Width) && Singleton.Instance.MouseCurrent.Y < (500 + CheckBox.Height)))
+                    if ((Singleton.Instance.MouseCurrent.X > 800 && Singleton.Instance.MouseCurrent.Y > 325) && (Singleton.Instance.MouseCurrent.X < (800 + CheckBox.Width) && Singleton.Instance.MouseCurrent.Y < (325 + CheckBox.Height)))
                     {
                         if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
                         {
@@ -219,37 +219,37 @@ namespace bubble_mono.Screen
                         }
                     }
 
-                    // Click Arrow BGM
-                    if ((Singleton.Instance.MouseCurrent.X > 700 && Singleton.Instance.MouseCurrent.Y > 240) && (Singleton.Instance.MouseCurrent.X < (700 + Arrow.Width) && Singleton.Instance.MouseCurrent.Y < (240 + Arrow.Height)))
-                    {
-                        if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
-                        {
-                            if (MasterBGM > 0) MasterBGM -= 5;
-                            SoundSelectUI.Play();
-                        }
-                    }
-                    else if ((Singleton.Instance.MouseCurrent.X > 900 && Singleton.Instance.MouseCurrent.Y > 240) && (Singleton.Instance.MouseCurrent.X < (900 + Arrow.Width) && Singleton.Instance.MouseCurrent.Y < (240 + Arrow.Height)))
-                    {
-                        if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
-                        {
-                            if (MasterBGM < 100) MasterBGM += 5;
-                        }
-                    }
-                    // Click Arrow SFX
-                    if ((Singleton.Instance.MouseCurrent.X > 700 && Singleton.Instance.MouseCurrent.Y > 315) && (Singleton.Instance.MouseCurrent.X < (700 + Arrow.Width) && Singleton.Instance.MouseCurrent.Y < (315 + Arrow.Height)))
-                    {
-                        if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
-                        {
-                            if (MasterSFX > 0) MasterSFX -= 5;
-                        }
-                    }
-                    else if ((Singleton.Instance.MouseCurrent.X > 900 && Singleton.Instance.MouseCurrent.Y > 315) && (Singleton.Instance.MouseCurrent.X < (900 + Arrow.Width) && Singleton.Instance.MouseCurrent.Y < (315 + Arrow.Height)))
-                    {
-                        if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
-                        {
-                            if (MasterSFX < 100) MasterSFX += 5;
-                        }
-                    }
+                    //// Click Arrow BGM
+                    //if ((Singleton.Instance.MouseCurrent.X > 700 && Singleton.Instance.MouseCurrent.Y > 240) && (Singleton.Instance.MouseCurrent.X < (700 + Arrow.Width) && Singleton.Instance.MouseCurrent.Y < (240 + Arrow.Height)))
+                    //{
+                    //    if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
+                    //    {
+                    //        if (MasterBGM > 0) MasterBGM -= 5;
+                    //        SoundSelectUI.Play();
+                    //    }
+                    //}
+                    //else if ((Singleton.Instance.MouseCurrent.X > 900 && Singleton.Instance.MouseCurrent.Y > 240) && (Singleton.Instance.MouseCurrent.X < (900 + Arrow.Width) && Singleton.Instance.MouseCurrent.Y < (240 + Arrow.Height)))
+                    //{
+                    //    if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
+                    //    {
+                    //        if (MasterBGM < 100) MasterBGM += 5;
+                    //    }
+                    //}
+                    //// Click Arrow SFX
+                    //if ((Singleton.Instance.MouseCurrent.X > 700 && Singleton.Instance.MouseCurrent.Y > 315) && (Singleton.Instance.MouseCurrent.X < (700 + Arrow.Width) && Singleton.Instance.MouseCurrent.Y < (315 + Arrow.Height)))
+                    //{
+                    //    if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
+                    //    {
+                    //        if (MasterSFX > 0) MasterSFX -= 5;
+                    //    }
+                    //}
+                    //else if ((Singleton.Instance.MouseCurrent.X > 900 && Singleton.Instance.MouseCurrent.Y > 315) && (Singleton.Instance.MouseCurrent.X < (900 + Arrow.Width) && Singleton.Instance.MouseCurrent.Y < (315 + Arrow.Height)))
+                    //{
+                    //    if (Singleton.Instance.MouseCurrent.LeftButton == ButtonState.Pressed && Singleton.Instance.MousePrevious.LeftButton == ButtonState.Released)
+                    //    {
+                    //        if (MasterSFX < 100) MasterSFX += 5;
+                    //    }
+                    //}
                     // Apply Option to Game
                     if ((Singleton.Instance.MouseCurrent.X > (1100 - Apply.Width) && Singleton.Instance.MouseCurrent.Y > 625) && (Singleton.Instance.MouseCurrent.X < 1100 && Singleton.Instance.MouseCurrent.Y < (625 + Back.Height)))
                     {
@@ -259,8 +259,8 @@ namespace bubble_mono.Screen
                             if (Singleton.Instance.IsFullScreen != FullScreen) Singleton.Instance.cmdFullScreen = true;
                             SoundClickUI.Play();
                             Singleton.Instance.cmdShowFPS = ShowFPS;
-                            Singleton.Instance.BGM_MasterVolume = MasterBGM;
-                            Singleton.Instance.SFX_MasterVolume = MasterSFX;
+                            //Singleton.Instance.BGM_MasterVolume = MasterBGM;
+                            //Singleton.Instance.SFX_MasterVolume = MasterSFX;
                         }
                     }
                     else
@@ -340,34 +340,34 @@ namespace bubble_mono.Screen
                     fontSize = KM.MeasureString("Option");
                     spriteBatch.DrawString(Arcanista, "Option", new Vector2(Singleton.Instance.Diemensions.X / 2 - fontSize.X / 2, 125), Color.White);
 
-                    spriteBatch.DrawString(Arcanista, "BGM Volume", new Vector2(300, 250), Color.White);
-                    spriteBatch.Draw(Arrow, new Vector2(700, 240), null, Color.White, 0, Vector2.Zero, 1f, SpriteEffects.FlipHorizontally, 0f);
-                    spriteBatch.DrawString(Arcanista, MasterBGM.ToString(), new Vector2(800, 250), Color.White);
-                    spriteBatch.Draw(Arrow, new Vector2(900, 240), Color.White);
+                    //spriteBatch.DrawString(Arcanista, "BGM Volume", new Vector2(300, 250), Color.White);
+                    //spriteBatch.Draw(Arrow, new Vector2(700, 240), null, Color.White, 0, Vector2.Zero, 1f, SpriteEffects.FlipHorizontally, 0f);
+                    //spriteBatch.DrawString(Arcanista, MasterBGM.ToString(), new Vector2(800, 250), Color.White);
+                    //spriteBatch.Draw(Arrow, new Vector2(900, 240), Color.White);
 
-                    spriteBatch.DrawString(Arcanista, "SFX Volume", new Vector2(300, 325), Color.White);
-                    spriteBatch.Draw(Arrow, new Vector2(700, 315), null, Color.White, 0, Vector2.Zero, 1f, SpriteEffects.FlipHorizontally, 0f);
-                    spriteBatch.DrawString(Arcanista, MasterSFX.ToString(), new Vector2(800, 325), Color.White);
-                    spriteBatch.Draw(Arrow, new Vector2(900, 315), Color.White);
+                    //spriteBatch.DrawString(Arcanista, "SFX Volume", new Vector2(300, 325), Color.White);
+                    //spriteBatch.Draw(Arrow, new Vector2(700, 315), null, Color.White, 0, Vector2.Zero, 1f, SpriteEffects.FlipHorizontally, 0f);
+                    //spriteBatch.DrawString(Arcanista, MasterSFX.ToString(), new Vector2(800, 325), Color.White);
+                    //spriteBatch.Draw(Arrow, new Vector2(900, 315), Color.White);
 
-                    spriteBatch.DrawString(Arcanista, "Full Screen", new Vector2(300, 425), Color.White);
-                    if (FullScreen)
+                    spriteBatch.DrawString(Arcanista, "Full Screen", new Vector2(300, 250), Color.White);
+                    if (!FullScreen)
                     {
-                        spriteBatch.Draw(CheckBox, new Vector2(800, 425), Color.White);
+                        spriteBatch.Draw(CheckBox, new Vector2(800, 250), Color.White);
                     }
                     else
                     {
-                        spriteBatch.Draw(CheckBoxYes, new Vector2(800, 425), Color.White);
+                        spriteBatch.Draw(CheckBoxYes, new Vector2(800, 250), Color.White);
                     }
 
-                    spriteBatch.DrawString(Arcanista, "Show FPS", new Vector2(300, 500), Color.White);
+                    spriteBatch.DrawString(Arcanista, "Show FPS", new Vector2(300, 325), Color.White);
                     if (!ShowFPS)
                     {
-                        spriteBatch.Draw(CheckBox, new Vector2(800, 500), Color.White);
+                        spriteBatch.Draw(CheckBox, new Vector2(800, 325), Color.White);
                     }
                     else
                     {
-                        spriteBatch.Draw(CheckBoxYes, new Vector2(800, 500), Color.White);
+                        spriteBatch.Draw(CheckBoxYes, new Vector2(800, 325), Color.White);
                     }
 
                     if (mhApply)
