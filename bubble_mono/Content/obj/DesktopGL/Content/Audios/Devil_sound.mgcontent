@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>/Users/popsan/Documents/comsci.nosync/game_programing/bubble_mono/bubble_mono/Content/Audios/Devil_sound.wav</SourceFile>
+  <SourceTime>2021-03-28T23:46:18+07:00</SourceTime>
+  <DestFile>/Users/popsan/Documents/comsci.nosync/game_programing/bubble_mono/bubble_mono/Content/bin/DesktopGL/Content/Audios/Devil_sound.xnb</DestFile>
+  <DestTime>2021-03-29T03:48:34.9389694+07:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2020-08-10T16:17:54+07:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2020-08-10T16:17:54+07:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

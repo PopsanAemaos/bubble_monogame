@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{8F10F7A2-E1AF-43E4-B0C8-B90D6DF299C3}|Default">
+  <MonoDevelop.Ide.ItemProperties.bubble__mono PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="bubble_mono/Screen/MenuScreen.cs">
+    <Files>
+      <File FileName="bubble_mono/Screen/MenuScreen.cs" Line="401" Column="114" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="bubble_mono" expanded="True">
+            <Node name="bubble_mono" expanded="True">
+              <Node name="Content" expanded="True">
+                <Node name="Audios" expanded="True" />
+                <Node name="Fonts" expanded="True" />
+              </Node>
+              <Node name="GameObjectsHard" expanded="True" />
+              <Node name="Managers" expanded="True" />
+              <Node name="Screen" expanded="True">
+                <Node name="MenuScreen.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

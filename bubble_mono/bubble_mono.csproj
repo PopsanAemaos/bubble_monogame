@@ -1,0 +1,90 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+    <None Remove="Content\obj\DesktopGL\start.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\exit.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\option.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\back.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\checkBox-yes.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\Arrow.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\start.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\about.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\apply.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\checkBox-no.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\BG.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\MenuScreen\ranking.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\Audios\UI_SoundPack11_Select_v14.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\SplashScreen\Logo.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\SplashScreen\Black.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\PlayScreen\bow_sheet.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\PlayScreen\bubble_sheet.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\PlayScreen\BG.mgcontent" />
+    <None Remove="Content\bin\DesktopGL\start.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\checkBox-yes.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\ranking.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\option.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\apply.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\Arrow.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\exit.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\about.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\checkBox-no.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\start.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\BG.xnb" />
+    <None Remove="Content\bin\DesktopGL\MenuScreen\back.xnb" />
+    <None Remove="Content\bin\DesktopGL\Audios\Spirit_of_the_Dead.ogg" />
+    <None Remove="Content\bin\DesktopGL\Audios\UI_SoundPack11_Select_v14.xnb" />
+    <None Remove="Content\bin\DesktopGL\SplashScreen\Black.xnb" />
+    <None Remove="Content\bin\DesktopGL\SplashScreen\Logo.xnb" />
+    <None Remove="Content\bin\DesktopGL\Fonts\Arcanista.xnb" />
+    <None Remove="Content\bin\DesktopGL\Fonts\Arial.xnb" />
+    <None Remove="Content\bin\DesktopGL\PlayScreen\bow_sheet.xnb" />
+    <None Remove="Content\bin\DesktopGL\PlayScreen\bubble_sheet.xnb" />
+    <None Remove="Content\bin\DesktopGL\PlayScreen\BG.xnb" />
+    <None Remove="Content\PlayScreen\BGGame.png" />
+    <None Remove="Content\obj\DesktopGL\Audios\Ball_broken.mgcontent" />
+    <None Remove="Content\bin\DesktopGL\Audios\Ball_broken.xnb" />
+    <None Remove="Content\bin\DesktopGL\Audios\Devil_sound.xnb" />
+    <None Remove="Content\obj\DesktopGL\Audios\Devil_sound.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\Audios\eletric_ball.mgcontent" />
+    <None Remove="Content\bin\DesktopGL\Audios\eletric_ball.xnb" />
+    <None Remove="Content\obj\DesktopGL\Audios\explotion.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\Audios\game_over.mgcontent" />
+    <None Remove="Content\bin\DesktopGL\Audios\Shooting.xnb" />
+    <None Remove="Content\obj\DesktopGL\Audios\Shooting.mgcontent" />
+    <None Remove="Content\obj\DesktopGL\Audios\Thunder_Sound.mgcontent" />
+    <None Remove="Content\bin\DesktopGL\Audios\Thunder_Sound.xnb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Managers\" />
+    <Folder Include="Screen\" />
+    <Folder Include="GameObjectsHard\" />
+    <Folder Include="Content\Fonts\" />
+    <Folder Include="Content\bubble\" />
+    <Folder Include="GameObjectsNormal\" />
+  </ItemGroup>
+</Project>
